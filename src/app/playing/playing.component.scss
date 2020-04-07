@@ -1,0 +1,115 @@
+
+
+:host {
+  display: grid;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+    height: 800px;
+  // width: 600px;
+  margin: 10px;
+
+  grid-row-gap: 20px;
+  grid-column-gap: 40px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(5,1fr);
+  grid-template-areas:"header header header"
+                      "hand1  hand2  hand3"
+                      "hand4  pot    hand5"
+                      "hand6  hand7  hand8"
+                      "footer footer footer"
+
+}
+.header {
+  background: #c8ff00;
+  grid-area: header;
+  width: auto;
+}
+
+.container {
+  color:white;
+}
+
+.hand1 {
+  background: #b3a4ac;
+  grid-area: hand1;
+}
+
+.hand2 {
+  background: #ff0000;
+  grid-area: hand2;
+}
+.hand3 {
+  background: #09ff00;
+  grid-area: hand3;
+}
+.hand4 {
+  background: #0059ff;
+  grid-area: hand4;
+}
+.hand5 {
+  background: #c8ff00;
+  grid-area: hand5;
+}
+.hand6 {
+  background: #0f4718;
+  grid-area: hand6;
+}
+.hand7 {
+  background: #270519;
+  grid-area: hand7;
+}
+
+.hand8 {
+  background: #270519;
+  grid-area: hand8;
+}
+
+.footer {
+  background: #0059ff;
+  grid-area: footer;
+}
+
+// .container {
+//   margin: 20px;
+//   display: grid;
+//   height: 500px;
+//   /* grid-template-columns: 200px 5rem 20% auto; */
+//   grid-template-columns: repeat(4, 25%);
+//   grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 100px [row-3-end];
+//   /* grid-column-gap: 20px;
+//   grid-row-gap: 10px; */
+//   grid-gap: 10px;
+//   grid-template-areas: "header header header header"
+//                        ". . main main"
+//                        "footer footer footer footer";
+// }
+
+// .el1 {
+//   background: rgba(255, 154, 72, 0.5);
+// }
+
+// .el2 {
+//   background: rgba(255, 0, 0, 0.5);
+//   /* grid-column-start: 1;
+//   grid-column-end: -1; */
+//   /* grid-column: 1 / -1; */
+//   /* grid-row-start: row-2-start;
+//   grid-row-end: span 1; */
+//   /* grid-row: row-2-start / span 1; */
+//   z-index: 10;
+//   grid-area: main;
+// }
+
+// .el3 {
+//   background: rgba(0, 128, 0, 0.5);
+//   /* grid-column-start: 2;
+//   grid-column-end: span 3;
+//   grid-row-start: row-1-start;
+//   grid-row-end: row-2-end; */
+//   grid-area: header;
+// }
+
+// .el4 {
+//   background: rgba(0, 4, 255, 0.5);
+//   grid-area: footer;
+// }

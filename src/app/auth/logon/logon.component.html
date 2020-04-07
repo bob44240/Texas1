@@ -1,0 +1,30 @@
+<section class="signup-form">
+    <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="15px" #logon="ngForm" (ngSubmit)="onSubmit(logon)">
+
+        <mat-form-field>
+            <input type="string" matInput placeholder="Enter UserName or Email" name="userName"
+            ngModel
+            required>
+        </mat-form-field>
+
+
+        <mat-form-field hintLabel="Min 6 characters">
+            <input type="password" matInput placeholder="Password" name="password"
+            #pwrd="ngModel"
+            required
+            minlength="6"
+            ngModel>
+          <mat-hint align="end">{{pwrd.value?.length}} / 6</mat-hint>
+          <mat-error *ngIf="pwrd.hasError('required')">Password is required</mat-error>
+          <mat-error *ngIf="!pwrd.hasError('required')">Password must be at least 6 characters long</mat-error>
+
+          </mat-form-field>
+
+        <button mat-raised-button type="submit" color="primary" [disabled]="logon.invalid">Sign Up</button>
+
+        <button mat-raised-button color="secondary" class="forgot_password">I forgot my password</button>
+    </form>
+
+    </section>
+
+

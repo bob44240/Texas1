@@ -1,0 +1,39 @@
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+  height: 100%;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+a:hoover, a:active {
+  color: lightgrey;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  font-size: 12px
+}
+
+.logo {
+  padding: 2px;
+  border: 1px solid;
+  height: 50px;
+  margin: 2px;
+  vertical-align: middle;
+
+}
+.nsv-caption {
+  display: inline-block;
+  padding-left: 6px;
+
+}
