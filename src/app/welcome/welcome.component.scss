@@ -1,4 +1,14 @@
+
+.main {
+  background: lightblue;
+  height: calc(100vh - 64px);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .welcome {
-  margin-top: 0px;
-  padding-top: 2px;
+  align-self: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 30%;
 }

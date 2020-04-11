@@ -10,7 +10,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
-
+import {MatSliderModule} from '@angular/material/slider';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 import {DateAdapter, MAT_DATE_FORMATS, MatDateFormats} from '@angular/material/core';
 
@@ -21,14 +23,20 @@ import {DateAdapter, MAT_DATE_FORMATS, MatDateFormats} from '@angular/material/c
     MatCheckboxModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    MatSliderModule,
+    MatChipsModule,
+    MatButtonToggleModule
   ],
   exports: [MatButtonModule, MatIconModule, MatFormFieldModule,
      MatInputModule,
      MatDatepickerModule, MatNativeDateModule, MatCheckboxModule,
      MatSidenavModule,
      MatToolbarModule,
-     MatListModule
+     MatListModule,
+     MatSliderModule,
+     MatChipsModule,
+     MatButtonToggleModule
     ]
 })
 export class MaterialModule{}

@@ -1,0 +1,92 @@
+// :host {
+//   display: grid;
+//   height: 800px;
+//   grid-row-gap: 20px;
+
+//   grid-column-gap: 40px;
+//   grid-template-columns: 200px 200px 200px;
+//   grid-template-rows: 200px 200px 200px 200px 200px;
+//   grid-template-areas:
+//                       "hand1  hand2  hand3"
+//                       "hand4  hand5  hand 6"
+//                       "hand7  hand8  hand9"
+//                       "stack  bet    bet"
+//                       "pot    flop   flop"
+
+// }
+// div {
+//   background: lightgrey;
+// }
+
+// .hand1 {
+//   grid-area: hand7;
+// }
+:host {
+  display: grid;
+  // height: 500px;
+  width: 100%;
+  background: lightgrey;
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+      "pot flop info"
+      "hand1 hand2 hand3"
+      "hand4 hand5 hand6"
+      "hand7 hand8 hand9"
+      "stack bet bet"
+}
+
+
+.pot {
+  grid-area: pot;
+}
+
+.flop {
+  grid-area: flop;
+}
+.stack {
+  grid-area: stack;
+}
+
+.bet {
+  grid-area: bet;
+}
+
+.hand1 {
+  grid-area: hand1;
+}
+.hand2 {
+  grid-area: hand2;
+}
+.hand3 {
+  grid-area: hand3;
+}
+.hand4 {
+  grid-area: hand4;
+}
+.hand5 {
+  grid-area: hand5;
+}
+.hand6 {
+  grid-area: hand6;
+}
+.hand7 {
+  grid-area: hand7;
+}
+
+.hand8 {
+  grid-area: hand7;
+}
+
+.hand9 {
+  grid-area: hand7;
+}
+
+
+.item {
+  width: 50%;
+  height: 50%;
+  // background: rgba(255, 213, 70, 0.4);
+  border: 2px dashed rgba(236, 198, 48, 0.5);
+}

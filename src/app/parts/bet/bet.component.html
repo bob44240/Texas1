@@ -1,0 +1,33 @@
+
+<button mat-raised-button color="primary" class="raise buttonSize">RAISE</button>
+<button mat-raised-button color="primary" class="call buttonSize">CALL</button>
+<button mat-raised-button color="primary" class="fold buttonSize">FOLD</button>
+<button mat-raised-button color="warn" class="allin buttonSize">ALL IN</button>
+<button
+mat-raised-button
+color="accent"
+class="deal buttonSize"
+(click)="dealCards()"
+>DEAL</button>
+
+
+<!-- <mat-chip-list class="units">
+    <mat-chip>Blinds</mat-chip>
+    <mat-chip>$</mat-chip>
+  </mat-chip-list> -->
+
+  <mat-button-toggle-group class="buttonSize" name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="bold">Big Blinds</mat-button-toggle>
+      <mat-button-toggle value="italic">Dollars</mat-button-toggle>
+    </mat-button-toggle-group>
+
+  <mat-slider class="betAmnt"
+  [max]="max"
+  [min]="min"
+  [step]="step"
+  [thumbLabel]="thumbLabel"
+  [tickInterval]="getSliderTickInterval()"
+  [(ngModel)]="value"
+  [vertical]="vertical">
+</mat-slider>
+

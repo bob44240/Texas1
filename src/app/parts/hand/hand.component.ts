@@ -9,10 +9,13 @@ export class HandComponent implements OnInit {
   //&input hand
   @Input("hand") hand;
 
-  public imagePath = "assets/CardImages/honor_heart-14.jpg"
+  public cardImage1 = "assets/CardImages/AS.jpg"
+  public cardImage2 = "assets/CardImages/KS.jpg"
+
   constructor() { }
 
   ngOnInit(): void {
+  console.log(this.hand)
   }
 
 }

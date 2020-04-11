@@ -1,0 +1,37 @@
+:host {
+  display: grid;
+  padding:10px;
+border:4px solid red;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:  "card1 card2"
+                        // "stack stack"
+                        // "player player"
+                      }
+
+#card1 {
+  grid-area: card1;
+  align-self: center;
+}
+#card2 {
+  grid-area: card2;
+}
+#card3 {
+  grid-area: card3;
+}
+.cardImage {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  height: 90%;
+  width: 90%;
+  border: 1px solid black;
+}
+
+.stack {grid-area: stack;}
+
+.player {grid-area: player;}

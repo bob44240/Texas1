@@ -1,0 +1,45 @@
+:host {
+  display: grid;
+  padding:10px;
+border:4px solid red;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:  "betAmnt betAmnt units"
+                        "raise call fold"
+                        "allin moreTime deal"
+  }
+  .buttonSize {
+   font-size: 90%;
+  }
+
+  .deal {
+    grid-area: deal;
+  }
+  .betAmnt {
+    grid-area: betAmnt;
+  }
+  .units {
+    grid-area: units;
+  }
+
+  .raise {
+    grid-area: raise;
+  }
+
+  .call {
+    grid-area: call;
+  }
+
+  .fold {
+    grid-area: fold;
+  }
+
+  .allin {
+    grid-area: allin;
+  }
+
+  .moreTime {
+    grid-area: moreTime;
+  }

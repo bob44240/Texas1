@@ -13,7 +13,11 @@ import { PlayingComponent } from './playing/playing.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HandComponent } from './parts/hand/hand.component';
 import { Card2cardComponent } from './card2card/card2card.component';
-import { Card2cardsComponent } from './card2cards/card2cards.component'
+import { Card2cardsComponent } from './card2cards/card2cards.component';
+import { Test1Component } from './test1/test1.component';
+import { FlopComponent } from './parts/flop/flop.component';
+import { BetComponent } from './parts/bet/bet.component';
+import { StackComponent } from './parts/stack/stack.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { Card2cardsComponent } from './card2cards/card2cards.component'
     WelcomeComponent,
     HandComponent,
     Card2cardComponent,
-    Card2cardsComponent
+    Card2cardsComponent,
+    Test1Component,
+    FlopComponent,
+    BetComponent,
+    StackComponent
   ],
   imports: [
     BrowserModule,

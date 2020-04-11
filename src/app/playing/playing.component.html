@@ -1,11 +1,18 @@
 
-    <div class="header"> <app-hand></app-hand>  </div>
-
-    <div class="hand1"> <app-hand></app-hand>  </div>
-    <div class="hand2"> <app-hand></app-hand>  </div>
-    <div class="hand3"> <app-hand></app-hand>  </div>
-
-  <div class="hand4">FOUR</div>
-  <div class="hand5"></div>
-  <div class="hand6"></div>
-
+<!-- <div class="main"> -->
+<div class="pot">
+  <div id="amount"><h1>POT: $210</h1></div>
+</div>
+<div class="hand flop"><app-flop></app-flop></div>
+<div class="hand hand1"> <app-hand [hand]='5'></app-hand> </div>
+<div class="hand hand2"> <app-hand [hand]='5'></app-hand> </div>
+<div class="hand hand3"> <app-hand [hand]='5'></app-hand></div>
+<div class="hand hand4"> <app-hand [hand]='5'></app-hand></div>
+<div class="hand hand5"> <app-hand [hand]='5'></app-hand></div>
+<div class="hand hand6"> <app-hand [hand]='5'></app-hand></div>
+<div class="hand hand7"> <app-hand [hand]='5'></app-hand></div>
+<div class="hand hand8"> <app-hand [hand]='5'></app-hand></div>
+<div class="hand hand9"> <app-hand [hand]='5'></app-hand></div>
+<div class="stack"><app-stack></app-stack></div>
+<div class="bet"><app-bet (deal)="onDeal()"></app-bet></div>
+<!-- </div> -->
